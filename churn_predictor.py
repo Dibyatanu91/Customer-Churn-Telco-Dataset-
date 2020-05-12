@@ -9,7 +9,9 @@ import pandas as pd
 import numpy as np
 
 
-df = pd.read_csv("/content/drive/My Drive/Python/Final Project/TelcoChurn.csv")
+url = 'https://raw.githubusercontent.com/Dibyatanu91/Customer-Churn-Telco-Dataset-/master/TelcoChurn.csv'
+
+df = pd.read_csv(url)
 
 # check the data
 print(list(df))
