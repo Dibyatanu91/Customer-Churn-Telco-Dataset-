@@ -1,2 +1,2 @@
-# Customer-Churn-Telco-Dataset-
+# Customer Churn Telco Dataset
 Data Science Project
