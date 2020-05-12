@@ -82,7 +82,7 @@ df["SeniorCitizen"] = df["SeniorCitizen"].replace({1:"Yes",0:"No"})
 churn     = df[df["Churn"] == "Yes"]
 not_churn = df[df["Churn"] == "No"]
 
-#Added by Mrunmayi
+
 df['tenure(yr)'] = ['0-1 Years' if x <=12   
                                   else 
                                   '1-2 Years' if x>12 and x<=24
@@ -241,7 +241,7 @@ pie(labels3,values3,labels4,values4,title2,titleText2)
 ### Kernel Density plots of Continuous predictors
 """
 
-#Added by Banik
+
 kdeplot('tenure')
 kdeplot('MonthlyCharges')
 kdeplot('TotalCharges')
@@ -289,7 +289,7 @@ sns.pairplot(df[list(df)], height=2.2)
 
 """Both the Scatterplot Matrix and the Correlation Matrix show that Total charges is highly correlated to tenure, and has quite a bit correlation to the monthly charges. Thus, it might be possible that using total charges along with the other two columns might result in redundancy."""
 
-# added by mrunmayi
+
 #df.describe(include='all')
 df.describe()
 
